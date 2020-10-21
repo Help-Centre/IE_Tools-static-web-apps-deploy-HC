@@ -1,5 +1,5 @@
-name: "Azure Static Web Apps Deploy"
-description: "Deploys an application to Azure Static Web Apps"
+name: "Azure Static Web Apps Deploy HC"
+description: "Deploys an application to Azure Static Web Apps HC"
 branding:
   icon: "upload-cloud"
   color: "blue"
