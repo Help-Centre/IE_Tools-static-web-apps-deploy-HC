@@ -1,5 +1,7 @@
 # GitHub Action for deploying to Azure Static Web Apps
 
+This was cloned to permit update of the Docker file to be used in HC static web apps
+
 This Github Action enables developers to build and publish their applications to Azure App Service Static Web Apps. This action utilizes [Oryx](https://github.com/microsoft/Oryx) to detect and build an application, then uploads the resulting application content, as well as any Azure Functions, to Azure. 
 
 * [More information about Azure Static Web Apps](https://aka.ms/swadocs)
