@@ -1,6 +1,10 @@
 FROM mcr.microsoft.com/appsvc/staticappsclient:stable
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["sh", "/entrypoint.sh"]
+
+WORKDIR /app
+COPY ./ /app
+
 RUN apt-get update -y
 RUN apt-get install -y libsecret-1-dev
 
