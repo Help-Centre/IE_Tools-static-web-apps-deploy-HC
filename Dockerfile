@@ -4,6 +4,13 @@ ENTRYPOINT ["sh", "/entrypoint.sh"]
 RUN apt-get update -y
 RUN apt-get install -y libsecret-1-dev
 
+RUN apt-get install -y git-core curl build-essential openssl libssl-dev \
+ && git clone https://github.com/nodejs/node.git \
+ && cd node \
+ && ./configure \
+ && make \
+ && sudo make install
+
 RUN apt-get update \
     && apt-get install -y wget gnupg \
     && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - \
