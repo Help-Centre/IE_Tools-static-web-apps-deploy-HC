@@ -3,6 +3,6 @@ COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["sh", "/entrypoint.sh"]
 RUN apt-get update -y
 RUN apt-get install -y libsecret-1-dev
-RUN apk add chromium
+RUN apt-get install -y chromium
 WORKDIR /app
 ENV CHROME_BIN=/usr/bin/chromium-browser
